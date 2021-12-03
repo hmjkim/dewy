@@ -42,11 +42,29 @@ jQuery(function($){
             didScroll = false;
         }
     }, 250);
-});
-// flickity
 
-// var element = document.querySelector(".carousel");
-// var flkty = new Flickity( element, {
-//     cellAlign: 'left',
-//     contain: true,
-// });
+
+    /*
+    |----------------------------------------------------------------
+    | Flickity
+    |----------------------------------------------------------------
+    */
+
+    // var element = document.querySelector(".carousel");
+    // var flkty = new Flickity( element, {
+    //     cellAlign: 'left',
+    //     contain: true,
+    // });
+
+    // if (matchMedia('max-width: 575px').matches) {
+        $('.carousel').flickity({
+            wrapAround: true,
+            cellAlign: 'center',
+            contain: true
+        });
+    // }
+  
+
+});
+
+
