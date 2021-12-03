@@ -1,2 +1,67 @@
 /* font-family: 'ABeeZee', sans-serif;
 font-family: 'Chelsea Market', cursive; */
+
+/*
+|------------------------------------------
+|  Global Styles
+|------------------------------------------
+*/
+body {
+    font-family: 'ABeeZee', sans-serif; 
+}
+
+.theme-wrapper {
+    overflow: hidden;
+    max-width: 100%;
+}
+
+/*
+|------------------------------------------
+|  Typography
+|------------------------------------------
+*/
+h2, h3, .navbar-brand {
+    font-family: 'Chelsea Market', cursive;
+}
+
+.section-heading {
+    
+}
+
+/*
+|------------------------------------------
+|  Header
+|------------------------------------------
+*/
+.navbar {
+    will-change: top;
+    transition: top .3s ease;
+    box-shadow: -1px 3px 5px 0px rgba(71,71,71,.25);
+}
+
+.navbar.nav-up {
+    top: -100px;
+    box-shadow: none;
+}
+/*
+|------------------------------------------
+|  Banner
+|------------------------------------------
+*/
+.bnr {
+    height: 100vh;
+    background: rgb(207, 226, 183);
+}
+/*
+|------------------------------------------
+|  Ingredients
+|------------------------------------------
+*/
+.ingredients .carousel-cell img {
+    width: 50%;
+}
+/*
+|------------------------------------------
+|  Footer
+|------------------------------------------
+*/
