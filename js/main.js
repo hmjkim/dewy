@@ -61,14 +61,19 @@ jQuery(function($){
     |----------------------------------------------------------------
     */
    
-    $('.carousel').flickity({
+    $('#ingredients-carousel').flickity({
         wrapAround: true,
         imageLoaded: true,
         cellAlign: 'center',
         prevNextButtons: false,
         watchCSS: true /*watches the content of :after of the carousel element*/
     });
-  
+
+    $('#bnr-carousel').flickity({
+        wrapAround: true,
+        autoPlay: true,
+        pauseAutoPlayOnHover: false
+    });
 
 });
 

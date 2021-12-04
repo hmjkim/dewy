@@ -16,14 +16,14 @@
     <body>
         <div class="theme-wrapper">
             <header>
-                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <nav class="navbar navbar-expand-md navbar-light fixed-top">
                     <div class="container">
                         <a class="navbar-brand" href="index.html">Dewy</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarCollapse">
-                            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
                                 <li class="nav-item">
                                     <a class="nav-link" aria-current="page" href="#ingredients">Ingredients</a>
                                 </li>
@@ -34,22 +34,22 @@
                                     <a class="nav-link" href="#ftr">Contact Us</a>
                                 </li>
                             </ul>
-                            <!-- <form class="d-flex">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-                            </form> -->
                         </div>
                     </div>
                   </nav>
               </header>
             <main>
-                <section class="bnr">
-                    
+                <section class="bnr p-0">
+                  <div id="bnr-carousel" class="carousel">
+                    <div class="carousel-cell green-tea bg-center"></div>
+                    <div class="carousel-cell lemon bg-center"></div>
+                    <div class="carousel-cell watermelon bg-center"></div>
+                  </div>
                 </section>
                 <section id="ingredients" class="ingredients">
                     <div class="container sm-container px-4 py-5">
                         <h2>Organic Ingredients Only</h2>
-                        <div class="carousel g-4 py-5 text-center">
+                        <div id="ingredients-carousel" class="carousel g-4 py-5 text-center">
                             <div class="carousel-cell">
                                 <img src="img/ingredients/green-tea.svg" alt="Green tea leaves">
                                 <h3>Green Tea</h3>
@@ -72,31 +72,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="container px-4 py-5">
-                        <h2>Organic Ingredients Only</h2>
-                        <div class="carousel row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 py-5 text-center align-items-end">
-                            <div class="carousel-cell col">
-                                <img src="img/ingredients/green-tea.svg" alt="Green tea leaves">
-                                <h3>Green Tea</h3>
-                                <p>Premium brewed green tea using filtered water</p>
-                            </div>
-                            <div class="carousel-cell col">
-                                <img class="honey" src="img/ingredients/honey.svg" alt="Honey">
-                                <h3>Honey</h3>
-                                <p>Natural sweetner free of chemicals and antibiotics</p>
-                            </div>
-                            <div class="carousel-cell col">
-                                <img src="img/ingredients/lemon.svg" alt="Lemon">
-                                <h3>Lemon</h3>
-                                <p>Fresh 100% real lemon juice full of Vitamin C</p>
-                            </div>
-                            <div class="carousel-cell col">
-                                <img src="img/ingredients/watermelon.svg" alt="Watermelon">
-                                <h3>Watermelon</h3>
-                                <p>Organic watermelon juice concentrate</p>
-                            </div>
-                        </div>
-                    </div> -->
                 </section>
                 
                 <section id="stores" class="stores">
@@ -111,53 +86,6 @@
                             <li class="col p-4 d-flex justify-content-center"><img src="img/stores/costco.png" alt=""></li>
                         </ul>
                     </div>
-                    <!-- <div class="container px-4 py-5" id="icon-grid">
-                        <h2 class="pb-2 border-bottom">Icon grid</h2>
-                    
-                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4 py-5">
-                          <div class="col d-flex align-items-start">
-                            <div>
-                              <h4 class="fw-bold mb-0">Featured title</h4>
-                              <p>Paragraph of text beneath the heading to explain the heading.</p>
-                            </div>
-                          </div>
-                          <div class="col d-flex align-items-start">
-                            <div>
-                              <h4 class="fw-bold mb-0">Featured title</h4>
-                              <p>Paragraph of text beneath the heading to explain the heading.</p>
-                            </div>
-                          </div>
-                          <div class="col d-flex align-items-start">
-                            <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"/></svg>
-                            <div>
-                              <h4 class="fw-bold mb-0">Featured title</h4>
-                              <p>Paragraph of text beneath the heading to explain the heading.</p>
-                            </div>
-                          </div>
-                          <div class="col d-flex align-items-start">
-                            <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"/></svg>
-                            <div>
-                              <h4 class="fw-bold mb-0">Featured title</h4>
-                              <p>Paragraph of text beneath the heading to explain the heading.</p>
-                            </div>
-                          </div>
-                          <div class="col d-flex align-items-start">
-                            <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"/></svg>
-                            <div>
-                              <h4 class="fw-bold mb-0">Featured title</h4>
-                              <p>Paragraph of text beneath the heading to explain the heading.</p>
-                            </div>
-                          </div>
-                          <div class="col d-flex align-items-start">
-                            <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"/></svg>
-                            <div>
-                              <h4 class="fw-bold mb-0">Featured title</h4>
-                              <p>Paragraph of text beneath the heading to explain the heading.</p>
-                            </div>
-                          </div>
-                          </div>
-                        </div>
-                      </div> -->
                 </section>
             </main>
           
@@ -166,7 +94,7 @@
                 <div class="py-5">
                   <div class="row">
                     <!-- SUBSCRIPTION FORM -->
-                    <div class="col-md-12 col-lg col-xl-6 p-4">
+                    <div class="col-md-12 col-lg-6 col-xl-6 p-4">
                       <form>
                         <h4 class="text-start">Stay Tuned</h4>
                         <p>Monthly digest of what's new and exciting from us.</p>
@@ -178,7 +106,7 @@
                       </form>
                     </div>
                     <!-- FOLLOW US -->
-                    <div class="col-md col-lg col-xl-3 p-4">
+                    <div class="col-md col-lg- col-xl-3 p-4">
                       <h4 class="text-start mb-4">Follow Us</h4>
                       <ul class="list-unstyled d-flex">
                         <li class="me-3"><a href="#"><img src="img/icons/youtube.svg" alt="YouTube"></a></li>
@@ -215,7 +143,7 @@
                 <div class="modal-content align-items-center rounded-5 shadow">
                   <!-- LEFT COLUMN -->
                   <div class="col-left col-6">
-                    <img class="dewy-mockup px-3 py-5" src="img/mockup/green-tea-carton.png" alt="Dewy's Green Iced Tea">
+                    <img class="dewy-mockup d-block m-auto px-3 py-5" src="img/mockup/green-tea-carton.png" alt="Dewy's Green Iced Tea">
                   </div>
                   <!-- RIGHT COLUMN -->
                   <div class="col-right col-6">
