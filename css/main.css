@@ -15,18 +15,42 @@ body {
     max-width: 100%;
 }
 
+section {
+    padding: 10vw;
+}
+
+.form-control {
+    border: none;
+    background: transparent;
+    border-bottom: 3px solid #87b900;
+}
+
+.form-control:focus {
+    background: transparent;
+}
+
+label {
+    color: rgb(114, 114, 114);
+}
+/*
+|------------------------------------------
+|  Buttons/Links
+|------------------------------------------
+*/
+.btn {
+    background: #87B900;
+    border: 2px solid black;
+    border-radius: 0.6rem;
+}
+
 /*
 |------------------------------------------
 |  Typography
 |------------------------------------------
 */
-h2, h3, .navbar-brand {
+h2, h3, h4, .btn, .navbar-brand {
     font-family: 'Chelsea Market', cursive;
     text-align: center;
-}
-
-.section-heading {
-    
 }
 
 /*
@@ -110,6 +134,48 @@ h2, h3, .navbar-brand {
 |------------------------------------------
 */
 
+.ftr {
+    background: #F8FBF0;
+}
+.ftr a {
+    color: rgb(49, 49, 49);
+}
+.copyright li:last-child::before {
+    content: '|';
+    padding: 0 5px;
+}
+
+/*
+|------------------------------------------
+|  Modal
+|------------------------------------------
+*/
+
+.modal {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.modal .modal-content {
+    flex-direction: row;
+}
+
+.modal .col-left {
+    background: rgb(237,242,223);
+    background: linear-gradient(90deg, rgb(225, 234, 200) 0%, rgb(207, 215, 186) 100%);
+}
+
+.modal-dialog {
+    max-width: 75%;
+}
+
+.modal .col-left img {
+    max-width: 100%;
+}
+.modal strong {
+    color: #87B900;
+}
+
+
 /*
 |------------------------------------------
 |------------------------------------------
@@ -139,9 +205,21 @@ h2, h3, .navbar-brand {
         flex: 0 0 auto;
         width: 50%;
     }
+
+    .carousel-cell p {
+        max-width: 202px;
+        margin: 0 auto;
+    }
 }
 
-@media (min-width: 992px) {
+/* md: TABLET */
+@media (min-width:768px){
+    .policy-list {
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1106px) {
 
     /* 4 columns */
     .ingredients .carousel-cell {
