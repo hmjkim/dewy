@@ -49,20 +49,14 @@ jQuery(function($){
     | Flickity
     |----------------------------------------------------------------
     */
-
-    // var element = document.querySelector(".carousel");
-    // var flkty = new Flickity( element, {
-    //     cellAlign: 'left',
-    //     contain: true,
-    // });
-
-    // if (matchMedia('max-width: 575px').matches) {
-        $('.carousel').flickity({
-            wrapAround: true,
-            cellAlign: 'center',
-            contain: true
-        });
-    // }
+   
+    $('.carousel').flickity({
+        wrapAround: true,
+        imageLoaded: true,
+        cellAlign: 'center',
+        prevNextButtons: false,
+        watchCSS: true /*watches the content of :after of the carousel element*/
+    });
   
 
 });

@@ -68,13 +68,34 @@ h2, h3, .navbar-brand {
 }
 
 .ingredients .carousel-cell {
-    width: 43%;
+    width: 40%;
+    min-width: 215px;
+    padding: 10px;
 }
 
 .ingredients .flickity-slider {
     display: flex;
     align-items: flex-end;
 }
+
+.flickity-page-dots .dot {
+    background: #9bc961;
+}
+
+/* enable Flickity */
+.carousel:after {
+    content: "flickity";
+    display: none; /*hide :after*/
+}
+
+@media (min-width: 576px) {
+    /* disable Flickity for screen larger than 576px */
+    .carousel:after {
+        content: '';
+    }
+}
+
+
 /*
 |------------------------------------------
 |  Stores
@@ -88,3 +109,43 @@ h2, h3, .navbar-brand {
 |  Footer
 |------------------------------------------
 */
+
+/*
+|------------------------------------------
+|------------------------------------------
+|------------------------------------------
+|  Media Queries
+|------------------------------------------
+|------------------------------------------
+|------------------------------------------
+*/
+
+@media (min-width: 576px){
+    .ingredients .carousel {
+        display: flex;
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: calc(-1 * var(--bs-gutter-y));
+        margin-right: calc(-0.5 * var(--bs-gutter-x));
+        margin-left: calc(-0.5 * var(--bs-gutter-x));
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    /* 2 columns */
+    .ingredients .carousel-cell {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    /* 4 columns */
+    .ingredients .carousel-cell {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+}
