@@ -42,6 +42,15 @@ label {
 |  Buttons/Links
 |------------------------------------------
 */
+a {
+    color: rgb(49, 49, 49);
+    transition: all .35s ease;
+}
+
+a:hover {
+    color: #9a9a9a;
+}
+
 .btn {
     background: #87B900;
     border: 2px solid black;
@@ -53,14 +62,7 @@ label {
     background: #edf5d7;
 }
 
-.contact-link {
-    color: rgb(49, 49, 49);
-    transition: all .35s ease;
-}
 
-.contact-link:hover {
-    color: #9a9a9a;
-}
 
 /*
 |------------------------------------------
@@ -171,6 +173,11 @@ h1, h2, h3, h4, .btn, .navbar-brand {
 |  Stores
 |------------------------------------------
 */
+
+.stores {
+    padding-top: 1vw;
+}
+
 .stores li img {
     max-width: 100%;
 }
@@ -283,6 +290,11 @@ h1, h2, h3, h4, .btn, .navbar-brand {
 
 /* md: TABLET */
 @media (min-width:768px){
+
+    section h2 {
+        font-size: 50px;
+    }
+
     .policy-list {
         justify-content: flex-end;
     }
@@ -293,12 +305,6 @@ h1, h2, h3, h4, .btn, .navbar-brand {
     .modal .col-left img {
         max-width: 50%;
     }
-
-    /* .modal .btn-close {
-        position: absolute;
-        top: 4vw;
-        right: 4vw;
-    } */
 }
 
 @media (min-width: 992px) {
@@ -317,6 +323,11 @@ h1, h2, h3, h4, .btn, .navbar-brand {
 }
 
 @media (min-width: 1200px) {
+
+    section h2 {
+        font-size: 65px;
+    }
+
     .modal .modal-content {
         display: flex !important;
     }
