@@ -84,6 +84,14 @@ h1, h2, h3, h4, .btn, .navbar-brand {
     background: #F8FBF0;
 }
 
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
 .navbar.nav-up {
     top: -100px;
     box-shadow: none;
@@ -191,6 +199,15 @@ h1, h2, h3, h4, .btn, .navbar-brand {
     background: rgba(0, 0, 0, 0.3);
 }
 
+.modal .modal-dialog {
+    max-width: 90%;
+    top: 50%;
+}
+
+.modal.fade .modal-dialog {
+    transform: translate(0, -50%);
+}
+
 .modal .modal-content {
     flex-direction: row;
     max-width: 890px;
@@ -199,10 +216,6 @@ h1, h2, h3, h4, .btn, .navbar-brand {
 .modal .col-left {
     background: rgb(237,242,223);
     background: linear-gradient(90deg, rgb(225, 234, 200) 0%, rgb(207, 215, 186) 100%);
-}
-
-.modal-dialog {
-    max-width: 75%;
 }
 
 .modal .col-left img {
@@ -222,7 +235,6 @@ h1, h2, h3, h4, .btn, .navbar-brand {
 |------------------------------------------
 |------------------------------------------
 */
-
 @media (min-width: 576px){
     .ingredients .carousel {
         display: flex;
@@ -247,12 +259,51 @@ h1, h2, h3, h4, .btn, .navbar-brand {
         max-width: 202px;
         margin: 0 auto;
     }
+
+    .modal .modal-dialog {
+        max-width: 75%;
+    }
+    
+    .modal-header {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+
+    .modal-body {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+
+    .modal .btn-close {
+        position: absolute;
+        top: 4vw;
+        right: 4vw;
+    }
 }
 
 /* md: TABLET */
 @media (min-width:768px){
     .policy-list {
         justify-content: flex-end;
+    }
+
+    .modal .col-left {
+        display: block !important;
+    }
+    .modal .col-left img {
+        max-width: 50%;
+    }
+
+    /* .modal .btn-close {
+        position: absolute;
+        top: 4vw;
+        right: 4vw;
+    } */
+}
+
+@media (min-width: 992px) {
+    .modal .modal-dialog {
+        max-width: 57%;
     }
 }
 
@@ -262,5 +313,33 @@ h1, h2, h3, h4, .btn, .navbar-brand {
     .ingredients .carousel-cell {
         flex: 0 0 auto;
         width: 25%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .modal .modal-content {
+        display: flex !important;
+    }
+    .modal .col-left {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .modal .modal-dialog {
+        max-width: 66%;
+    }
+
+    .modal .col-right {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .modal .col-left img {
+        max-width: 100%;
+    }
+
+    .modal .btn-close {
+        top: 8%;
+        right: 5%;
     }
 }
