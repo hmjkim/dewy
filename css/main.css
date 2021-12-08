@@ -53,6 +53,15 @@ label {
     background: #edf5d7;
 }
 
+.contact-link {
+    color: rgb(49, 49, 49);
+    transition: all .35s ease;
+}
+
+.contact-link:hover {
+    color: #9a9a9a;
+}
+
 /*
 |------------------------------------------
 |  Typography
@@ -90,6 +99,10 @@ h1, h2, h3, h4, .btn, .navbar-brand {
 }
 #bnr-carousel .flickity-page-dots {
     bottom: 10vh;
+}
+
+.bnr {
+    margin-top: 56px;
 }
 
 .bnr .green-tea{
@@ -162,9 +175,7 @@ h1, h2, h3, h4, .btn, .navbar-brand {
 .ftr {
     background: #F8FBF0;
 }
-.ftr a {
-    color: rgb(49, 49, 49);
-}
+
 .copyright li:last-child::before {
     content: '|';
     padding: 0 5px;
@@ -182,6 +193,7 @@ h1, h2, h3, h4, .btn, .navbar-brand {
 
 .modal .modal-content {
     flex-direction: row;
+    max-width: 890px;
 }
 
 .modal .col-left {
